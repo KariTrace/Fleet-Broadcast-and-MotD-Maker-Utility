@@ -138,15 +138,25 @@
         $("form#bcastm").on('click', '#create_output', function(){
         	console.log("BCast maker button presses.")
 
-        	var bcast_string = "";
-			var form_data = $(this);
-
-        	//for the value of each input or dropdown field. concat to gether followed by a ||
+        	var bcast_string;
+        	var form_data = $(this).parent().parent().parent().serialize();
+        	// Collect all the form field values into an arry
         	
-        	form_data.each(':input :select', function () {
-                    console.log($(this).val());
-            });
+        	// Split string by & character
+        	form_data = form_data.split("&");
 			
+			// Now loop the array, break the values to k=>v pairs, and concatinate onto bcast_string
+			$(form_data).each(function(key, value){
+
+        		// Iterate over that array creating the broadcast string
+        		value = value.split("=");
+        		console.log(value[0]);
+        		console.log(value[1]);
+
+        		bcast_String .= value
+			});
+
+			console.log(form_data);
 			return true;
         });
 		//]]></script>
@@ -155,7 +165,7 @@
 <!--//
 CARACAL FLEET
 OP3 || Fleet Name: Caracalfleet 0100 || FC: Vee || Reimbursable: Stratop || Formup: B-D
-1x tengu/5x loki boosters > caracals > scythes > lachesis/huginn > celestis/bellicose > hictor/dictor
+1x tengu/5x loki boosters> caracals> scythes> lachesis/huginn> celestis/bellicose> hictor/dictor
 
 
 
@@ -168,7 +178,7 @@ MUMBLE OP 2 <-- Mumble channel. Make sure it's right.
 
 BALTECFLEET <-- Doctrine name.
 
-BONUS LOKIS/LEGION > ONEIROS/GUARDIAN/EXEQUROR/AUGOROR > WEB LOKIS/PROTEUSES > MEGATHRONS > HICTORS/ARMAGEDDONS > CELESTIS > TACKLE
+BONUS LOKIS/LEGION> ONEIROS/GUARDIAN/EXEQUROR/AUGOROR> WEB LOKIS/PROTEUSES> MEGATHRONS> HICTORS/ARMAGEDDONS> CELESTIS> TACKLE
 https://goonfleet.co...ost__p__7236133
 MEGATHRONS: RAILS - STD FITS <-- This denotes any variations of your fittings.
 BOOSTING LOKIS: If you are not in a Wing Command spot, spam "WC WC WC WC" in fleet until you get moved.
