@@ -184,14 +184,15 @@
 				return true;
 	        });
 		//]]></script>
+	</body>
+</html>
+<!--//
 
 MUMBLE OP 2 <-- Mumble channel. Make sure it's right.
 
 BALTECFLEET <-- Doctrine name.
 
-BONUS LOKIS/LEGION> ONEIROS/GUARDIAN/EXEQUROR/AUGOROR> WEB LOKIS/PROTEUSES> MEGATHRONS> HICTORS/ARMAGEDDONS> CELESTIS> TACKLE
-https://goonfleet.co...ost__p__7236133
-MEGATHRONS: RAILS - STD FITS <-- This denotes any variations of your fittings.
+
 BOOSTING LOKIS: If you are not in a Wing Command spot, spam "WC WC WC WC" in fleet until you get moved.
 
 FORMUP 4-EP 12-1 (pw 420) <-- This is the formup location. 
