@@ -143,19 +143,47 @@
 				$(this).focus().select();
 			});
 
-	</body>
-</html>
-<!--//
-CARACAL FLEET
-OP3 || Fleet Name: Caracalfleet 0100 || FC: Vee || Reimbursable: Stratop || Formup: B-D
-1x tengu/5x loki boosters> caracals> scythes> lachesis/huginn> celestis/bellicose> hictor/dictor
+
+
+	        $("form#bcastm").on('click', '#create_output', function(){
+	        	console.log("BCast maker button presses.");
+
+	        	// TODO error checking. Add jquery validation plugin here
 
 
 
-REGION COMMANDER
-DASHBOARD 
+	        	var bcast_string = "";
+	        	var form_data = $(this).parent().parent().parent().serialize();
+	        	// Collect all the form field values into an arry
+	        	
+	        	// Split string by & character
+	        	form_data = form_data.split("&");
+				
+				// Now loop the array, break the values to k=>v pairs, and concatinate onto bcast_string
+				$(form_data).each(function(key, value){
 
+	        		// Iterate over that array creating the broadcast string
+	        		value = value.split("=");
 
+	        		// Convert field kery and value to human readable 
+	        		value[0] = value[0].replace("_", " ");
+	        		value[1] = value[1].replace("_", " ");
+	        		value[1] = value[1].replace("+", " "); // damn you jQuery, not using %20 for spaces
+
+	        		// Uppercase first letter for keys only. Values are up to the user to do.
+					value[0] = value[0][0].toUpperCase() + value[0].substring(1);
+
+	        		bcast_string += value[0]+": "+value[1] +" || ";
+				});
+
+				bcast_string = bcast_string.substr(0,bcast_string.length-4);
+
+				$("html.js body form#bcastm div.form_part_3 textarea.your_braodcast_output").val(bcast_string).focus().select();
+
+				console.log(bcast_string);
+				return true;
+	        });
+		//]]></script>
 
 MUMBLE OP 2 <-- Mumble channel. Make sure it's right.
 
