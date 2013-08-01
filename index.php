@@ -111,13 +111,13 @@
 			<div class="form_part_3">
 				<h3 class="important">Results:</h3>
 				<label>Your broadcast</label>
-				<textarea  rows="4" cols="50" name="fleet_comp"></textarea>
+				<textarea rows="4" cols="50" class="your_braodcast_output"></textarea>
 
 				<label>People to ping</label>
-				<textarea rows="4" cols="50" name="ping_people"></textarea>
+				<textarea rows="4" cols="50" class="ping_people_output"></textarea>
 
 				<label>Fleet MotD</label>
-				<textarea rows="4" cols="50" name="fleet_motd"></textarea>
+				<textarea rows="4" cols="50" class="fleet_motd_output"></textarea>
 			</div>
 		</form>
 		<div class="clear"></div>
