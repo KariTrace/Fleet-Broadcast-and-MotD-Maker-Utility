@@ -1,0 +1,16 @@
+{
+    "name": "fcon/BroadcastMaker",
+    "description": "Create properly formated per CFC braodcast recommendations.",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Kari Trace",
+            "email": "kari.eve.trace@gmail.com"
+        }
+    ],
+    "minimum-stability": "RC",
+    "require": {
+        "monolog/monolog": "1.0.*",
+        "components/html5-boilerplate": "dev-master"
+    }
+}
