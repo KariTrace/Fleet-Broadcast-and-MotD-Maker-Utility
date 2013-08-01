@@ -26,16 +26,16 @@
 			<div class="form_part_1">
 					<h3 class="important">Requirted Inforamtion:</h3>
 					<label>Fleet Name</label>
-					<input type="text" class="fleet_name" value="" />
+					<input type="text" name="fleet_name" class="fleet_name" value="" />
 
 					<label>FC</label>
-					<input type="text" value="" />
+					<input type="text" name="fc_name" value="" />
 
 					<label>Form up location</label>
-					<input type="text" value="" />
+					<input type="text" name="form_up" value="" />
 
 					<label>Fleet Comp</label>
-					<select>
+					<select name="fleet_comp">
 						<option value="0" selected>TBA</option>
 						<option value="1">Kitchen Sink (Armor)</option>
 						<option value="2">Kitchen Sink (Shield)</option>
@@ -48,11 +48,11 @@
 						<option value="6">Das Boot</option>
 						<option value="6">POS Rep Carriers</option>
 						<option value="6">Supers</option>
-					</select >
+					</select>
 
 					<?php //TODO MAke this a DBO.TB data pull ?>
 					<label>Comms</label>
-					<select >
+					<select name="comms_channel">
 						<option value="0" selected>Skirmish</option>
 						<option value="11">Op 11</option>
 						<option value="12">Op 12</option>
@@ -69,12 +69,11 @@
 						<option value="8">Op 8</option>
 						<option value="9">Op 9</option>
 						<option value="10">Op 10</option>
-					</select >
+					</select>
 
 					<?php //TODO MAke this a DBO.TB data pull ?>
 					<label>Reimbursable</label>
-					<select>
-						
+					<select name="reimb_rate">
 						<option value="0" selected>N/A</option>
 						<option value="gsf_peacetime">GSF Peacetime</option>
 						<option value="gsf_stratop">GSF Strat Op</option>
@@ -87,19 +86,19 @@
 			<div class="form_part_2">
 				<h3 class="important">Optional Inforamtion:</h3>
 				<label>DPS anchor</label>
-				<input type="input" name="logi_channel" value=""/>
+				<input type="input" name="dps_anchor" value=""/>
 
 				<label>Backup anchor</label>
-				<input type="input" name="logi_channel" value=""/>
+				<input type="input" name="backup_anchor" value=""/>
 
 				<label>Logi channel</label>
 				<input type="input" name="logi_channel" value=""/>
 
 				<label>PAP Link</label>
-				<input type="input" name="departure_time" value=""/>
+				<input type="input" name="pap_link" value=""/>
 
 				<label>Departure time</label>
-				<input type="input" name="departure_time" value=""/>
+				<input type="input" name="depart_time" value=""/>
 
 				<div class="maker_div">
 					<button type="button" id="create_output">Make Broadcast / Motd</button>
