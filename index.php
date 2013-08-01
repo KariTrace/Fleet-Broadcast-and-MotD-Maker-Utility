@@ -102,7 +102,8 @@
 				<input type="input" name="depart_time" value=""/>
 
 				<div class="maker_div">
-					<button type="button" id="create_output">Make Broadcast / Motd</button>
+					<button type="button" id="create_output"	>Make Broadcast / Motd</button>
+					<button type="reset" id="clear_bttn">Clear</button>
 				</div>
 			</div>
 
