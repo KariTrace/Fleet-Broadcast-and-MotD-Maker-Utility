@@ -92,7 +92,7 @@ input:-moz-placeholder {
     color: #999999;
 }
 
-input:focus, select:focus {
+input:focus, select:focus, textarea:focus {
     box-shadow: 0 2px 0 #2392f3 inset, 0 -2px 0 #2392f3 inset, 2px 0 0 #2392f3 inset, -2px 0 0 #2392f3 inset, 0 0 4px rgba(35, 146, 243, 0.5);
     outline: none;
 }
