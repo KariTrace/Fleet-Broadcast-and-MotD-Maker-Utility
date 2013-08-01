@@ -137,31 +137,12 @@
 
         <!-- Custom scripts -->
         <script type="text/javascript">//<![CDATA[
-        $("form#bcastm").on('click', '#create_output', function(){
-        	console.log("BCast maker button presses.")
-
-        	var bcast_string;
-        	var form_data = $(this).parent().parent().parent().serialize();
-        	// Collect all the form field values into an arry
-        	
-        	// Split string by & character
-        	form_data = form_data.split("&");
-			
-			// Now loop the array, break the values to k=>v pairs, and concatinate onto bcast_string
-			$(form_data).each(function(key, value){
-
-        		// Iterate over that array creating the broadcast string
-        		value = value.split("=");
-        		console.log(value[0]);
-        		console.log(value[1]);
-
-        		bcast_String .= value
+        	//Always select the text when clicking on a textbox
+			$("textarea").mouseup(function(e){
+				e.preventDefault();
+				$(this).focus().select();
 			});
 
-			console.log(form_data);
-			return true;
-        });
-		//]]></script>
 	</body>
 </html>
 <!--//
