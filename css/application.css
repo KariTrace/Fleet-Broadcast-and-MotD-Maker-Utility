@@ -1,0 +1,136 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+/* Reset -^ // v- custom stylers */
+
+font {
+	size: 10pt;
+}
+
+label {
+	display:	block;
+	padding-top: 15px;
+}
+
+
+
+/* Fancy form elements */
+input, select, textarea {
+    box-shadow: 2px 2px 3px rgba(0, 0, 0, 0.4) inset, 0 -1px 0 rgba(0, 0, 0, 0.05) inset;
+    -webkit-transition: all 0.2s linear;
+    -moz-transition: all 0.2s linear;
+    -ms-transition: all 0.2s linear;
+    -o-transition: all 0.2s linear;
+    transition: all 0.2s linear;
+    font-family: "Helvetica Neue", sans-serif;
+    font-size: 13px;
+    color: #222222;
+    height: 24px;
+    width: auto;
+    border-radius: 5px;
+    border: 1px solid #AAA;
+    font-size: inherit;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    margin: 5px;
+    padding: 0px 5px;
+    width: 90%;
+}
+
+input::-webkit-input-placeholder {
+    color: #999999;
+}
+
+input:-moz-placeholder {
+    color: #999999;
+}
+
+input:focus, select:focus {
+    box-shadow: 0 2px 0 #2392f3 inset, 0 -2px 0 #2392f3 inset, 2px 0 0 #2392f3 inset, -2px 0 0 #2392f3 inset, 0 0 4px rgba(35, 146, 243, 0.5);
+    outline: none;
+}
+
+textarea {
+	height: 90px;
+}
+
+button {
+	display: inline;
+	margin: 0px 5%
+}
+
+
+/* BCastM styles */
+.form_part_1, .form_part_2, .form_part_3 {
+	display: inline;
+	float: left;
+	width: 33%;
+}
+
+.clear {
+	clear: both;
+}
+
+.important {
+	color: red;
+}
+
+#msg_bar {
+	width: 100%;
+	background-color: #999;
+}
+
+.maker_div {
+	width: 100%;
+	height: 100%;
+	text-align: center;
+	vertical-align: center;
+	margin: 32px auto;
+}
