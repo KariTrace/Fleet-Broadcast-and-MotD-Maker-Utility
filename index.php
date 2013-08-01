@@ -36,28 +36,24 @@
 
 					<label>Fleet Comp</label>
 					<select name="fleet_comp">
-						<option value="0" selected>TBA</option>
-						<option value="1">Kitchen Sink (Armor)</option>
-						<option value="2">Kitchen Sink (Shield)</option>
-						<option value="3">Siege</option>
-						<option value="4">Caracal</option>
-						<option value="5">Baltec</option>
-						<option value="6">Alpha</option>
-						<option value="6">TFI</option>
-						<option value="6">Dread</option>
-						<option value="6">Das Boot</option>
-						<option value="6">POS Rep Carriers</option>
-						<option value="6">Supers</option>
+						<option value="TBA" selected>TBA</option>
+						<option value="Kitchen Sink (Armor)">Kitchen Sink (Armor)</option>
+						<option value="Kitchen Sink (Shield)">Kitchen Sink (Shield)</option>
+						<option value="Siege Fleet">Siege</option>
+						<option value="Caracal Fleet">Caracal</option>
+						<option value="Baltec Fleet">Baltec</option>
+						<option value="Alph Fleeta">Alpha</option>
+						<option value="TFI Fleet">TFI</option>
+						<option value="Dread Fleet">Dread</option>
+						<option value="Das Boot Fleet">Das Boot</option>
+						<option value="POS Rep Fleet">POS Rep Carriers</option>
+						<option value="Supers Fleet">Supers</option>
 					</select>
 
 					<?php //TODO MAke this a DBO.TB data pull ?>
-					<label>Comms</label>
+					<label>Comms (Mumble)</label>
 					<select name="comms_channel">
-						<option value="0" selected>Skirmish</option>
-						<option value="11">Op 11</option>
-						<option value="12">Op 12</option>
-						<option value="13">Op 13</option>
-						<option value="14">Op 14</option>
+						<option value="0" selected disabled>TBA</option>
 						<option value="0" disabled>Strat Op</option>
 						<option value="1">Op 1</option>
 						<option value="2">Op 2</option>
@@ -69,12 +65,17 @@
 						<option value="8">Op 8</option>
 						<option value="9">Op 9</option>
 						<option value="10">Op 10</option>
+						<option disabled>Skirmish</option>
+						<option value="11">Op 11</option>
+						<option value="12">Op 12</option>
+						<option value="13">Op 13</option>
+						<option value="14">Op 14</option>
 					</select>
 
 					<?php //TODO MAke this a DBO.TB data pull ?>
 					<label>Reimbursable</label>
 					<select name="reimb_rate">
-						<option value="0" selected>N/A</option>
+						<option value="NA" selected>NA</option>
 						<option value="gsf_peacetime">GSF Peacetime</option>
 						<option value="gsf_stratop">GSF Strat Op</option>
 						<option value="fcon_roam">FCON Roam</option>
