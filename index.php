@@ -153,6 +153,14 @@
 	        	console.log("BCast maker button presses.");
 	        	// TODO error checking. Add jquery validation plugin here
 
+                //jQ selector logic
+                $("#bcastm").validate({
+                    rules: {
+                        fleet_name: {required: true, rangelength: [3, 128]},
+                        fc_name: 	{rangelength: [2, 32]},
+                        form_up: 	{required: true, email: true}
+                    }
+                });
 
 
 	        	var bcast_string = "";
