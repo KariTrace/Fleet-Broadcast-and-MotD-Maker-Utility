@@ -31,7 +31,7 @@
 					<label>FC</label>
 					<input type="text" name="fc_name" value="" />
 
-					<label>Form up location</label>
+					<label>Rally Location</label>
 					<input type="text" name="form_up" value="" />
 
 					<label>Fleet Comp</label>
@@ -85,24 +85,24 @@
 			</div>
 
 			<div class="form_part_2">
-				<h3 class="important">Optional Inforamtion:</h3>
-				<label>DPS anchor</label>
+				<h3 class="important">Optional Information:</h3>
+				<label>DPS Anchor</label>
 				<input type="input" name="dps_anchor" value=""/>
 
-				<label>Backup anchor</label>
+				<label>Backup Anchor</label>
 				<input type="input" name="backup_anchor" value=""/>
 
-				<label>Logi channel</label>
+				<label>Logi-channel</label>
 				<input type="input" name="logi_channel" value=""/>
 
 				<label>PAP Link</label>
 				<input type="input" name="pap_link" value=""/>
 
-				<label>Departure time</label>
+				<label>Departing</label>
 				<input type="input" name="depart_time" value=""/>
 
 				<div class="maker_div">
-					<button type="button" id="create_output"	>Make Broadcast / Motd</button>
+					<button type="button" id="create_output">Make!</button>
 					<button type="reset" id="clear_bttn">Clear</button>
 				</div>
 			</div>
