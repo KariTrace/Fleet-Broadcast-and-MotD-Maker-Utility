@@ -76,7 +76,6 @@ input, select, textarea {
     border-radius: 5px;
     border: 1px solid #AAA;
     font-size: inherit;
-    overflow: hidden;
     text-overflow: ellipsis;
     white-space: nowrap;
     margin: 5px;
