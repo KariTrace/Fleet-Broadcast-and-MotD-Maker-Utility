@@ -1,25 +1,25 @@
 <!DOCTYPE html>
-    <!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
-    <!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
-    <!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
-    <!--[if gt IE 8]><!--> <html class="no-js"> <!--<![endif]-->
+    <!--//[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+    <!--//[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+    <!--//[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+    <!--//[if gt IE 8]><!--//> <html class="no-js"> <!--//<![endif]-->
     <head>
         <meta charset="utf-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-
-        <meta name="description" content="">
+        <meta name="description" content="EVE Online Fleet Commander tool fot create consistently formated Jabber pings and MotD messages.">
         <meta name="viewport" content="width=device-width">
 
         <link rel="stylesheet" href="components/normalize.css/normalize.css">
         <link rel="stylesheet" href="components/html5-boilerplate/css/main.css">
+		<link rel="stylesheet" href="//code.jquery.com/ui/1.10.3/themes/smoothness/jquery-ui.css" />
+		<link rel="stylesheet" type="text/css" href="css/application.css">
+
         <script src="components/modernizr/modernizr.js"></script>
 
 		<title>CFC Broadcast Maker</title>
 
-		<link rel="stylesheet" type="text/css" href="css/application.css">
-
-        <!-- if IE 8 or below styles-->
-        <!--[if lt IE 9]><link rel="stylesheet" href="ie_fix.css"><![endif]-->
+        <!--// if IE 8 or below styles-->
+        <!--//[if lt IE 9]><link rel="stylesheet" href="ie_fix.css"><![endif]-->
     </head>
 	<body>
 		<form id="bcastm">
@@ -122,20 +122,22 @@
 		</form>
 		<div class="clear"></div>
 
-		<!-- message bar -->
-		<div id="msg_bar">
-			asdfasdfasdf
-		</div>
+		<!--// message bar -->
+		<div id="msg_bar"></div>
 
-        <!-- Framework (jQ/UI) includes -->
+
+
+        <!--// Framework (jQ/UI) includes -->
         <script type="text/javascript" src="//ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
-        <script>window.jQuery || document.write('<script type="text/javascript" src="components/jquery/jquery.min.js"><\/script>')</script>
         <script type="text/javascript" src="//ajax.googleapis.com/ajax/libs/jqueryui/1.10.3/jquery-ui.min.js"></script>
-        <script>window.jQuery || document.write('<script type="text/javascript" src="vendor/kraksoft/jquery-ui/jquery-ui.custom.min.js"><\/script>')</script>
+		<script type="text/javascript" src="//ajax.googleapis.com/ajax/libs/jqueryui/1.10.3/jquery-ui.min.js"></script>
 		
-		<link rel="stylesheet" href="//code.jquery.com/ui/1.10.3/themes/smoothness/jquery-ui.css" />
-
-        <!-- Custom scripts -->
+		<!--// and includes when the remote access calls fail -->
+		<script>window.jQuery || document.write('<script type="text/javascript" src="components/jquery/jquery.min.js"><\/script>')</script>
+		<script>window.jQuery || document.write('<script type="text/javascript" src="vendor/kraksoft/jquery-ui/jquery-ui.custom.min.js"><\/script>')</script>
+        <script>window.jQuery || document.write('<script type="text/javascript" src="js/jquery-ui.custom.min.js"><\/script>')</script>\>
+        
+        <!--// Custom scripts -->
         <script type="text/javascript">//<![CDATA[
         	//Always select the text when clicking on a textbox
 			$("textarea").mouseup(function(e){
@@ -147,7 +149,6 @@
 
 	        $("form#bcastm").on('click', '#create_output', function(){
 	        	console.log("BCast maker button presses.");
-
 	        	// TODO error checking. Add jquery validation plugin here
 
 
@@ -156,6 +157,8 @@
 	        	var form_data = $(this).parent().parent().parent().serialize();
 	        	// Collect all the form field values into an arry
 	        	
+
+
 	        	// Split string by & character
 	        	form_data = form_data.split("&");
 				
