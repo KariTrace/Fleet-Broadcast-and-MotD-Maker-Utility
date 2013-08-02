@@ -9,10 +9,10 @@
         <meta name="description" content="EVE Online Fleet Commander tool fot create consistently formated Jabber pings and MotD messages.">
         <meta name="viewport" content="width=device-width">
 
-        <link rel="stylesheet" href="components/normalize.css/normalize.css">
-        <link rel="stylesheet" href="components/html5-boilerplate/css/main.css">
+        <link rel="stylesheet" href="components/normalize.css/normalize.css" />
+        <link rel="stylesheet" href="components/html5-boilerplate/css/main.css" />
 		<link rel="stylesheet" href="//code.jquery.com/ui/1.10.3/themes/smoothness/jquery-ui.css" />
-		<link rel="stylesheet" type="text/css" href="css/application.css">
+		<link rel="stylesheet" type="text/css" href="css/application.css" />
 
         <script src="components/modernizr/modernizr.js"></script>
 
@@ -130,12 +130,14 @@
         <!--// Framework (jQ/UI) includes -->
         <script type="text/javascript" src="//ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
         <script type="text/javascript" src="//ajax.googleapis.com/ajax/libs/jqueryui/1.10.3/jquery-ui.min.js"></script>
-		<script type="text/javascript" src="//ajax.googleapis.com/ajax/libs/jqueryui/1.10.3/jquery-ui.min.js"></script>
+		<script type="text/javascript" src="//ajax.aspnetcdn.com/ajax/jquery.validate/1.11.1/jquery.validate.min.js"></script>
+		<script type="text/javascript" src="//ajax.aspnetcdn.com/ajax/jquery.validate/1.11.1/additional-methods.min.js"></script>
 		
 		<!--// and includes when the remote access calls fail -->
-		<script>window.jQuery || document.write('<script type="text/javascript" src="components/jquery/jquery.min.js"><\/script>')</script>
-		<script>window.jQuery || document.write('<script type="text/javascript" src="vendor/kraksoft/jquery-ui/jquery-ui.custom.min.js"><\/script>')</script>
-        <script>window.jQuery || document.write('<script type="text/javascript" src="js/jquery-ui.custom.min.js"><\/script>')</script>\>
+		<script>window.jQuery || document.write('<script type="text/javascript" src="./components/jquery/jquery.min.js"><\/script>')</script>
+		<script>window.jQuery || document.write('<script type="text/javascript" src="./vendor/kraksoft/jquery-ui/jquery-ui.custom.min.js"><\/script>')</script>
+        <script>window.jQuery || document.write('<script type="text/javascript" src="./js/query.validate.min.js"><\/script>')</script>
+        <script>window.jQuery || document.write('<script type="text/javascript" src="./js/additional-methods.min.js"><\/script>')</script>
         
         <!--// Custom scripts -->
         <script type="text/javascript">//<![CDATA[
