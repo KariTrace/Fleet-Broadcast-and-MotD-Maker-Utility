@@ -24,64 +24,64 @@
 	<body>
 		<form id="bcastm">
 			<div class="form_part_1">
-					<h3 class="important">Requirted Inforamtion:</h3>
-					<label>Fleet Name</label>
-					<input type="text" name="fleet_name" class="fleet_name" value="" />
+				<h3 class="important">Requirted Inforamtion:</h3>
+				<label>Fleet Name</label>
+				<input type="text" name="fleet_name" class="fleet_name" value="" />
 
-					<label>FC</label>
-					<input type="text" name="fc_name" value="" />
+				<label>FC</label>
+				<input type="text" name="fc_name" value="" />
 
-					<label>Rally Location</label>
-					<input type="text" name="form_up" value="" />
+				<label>Rally Location</label>
+				<input type="text" name="form_up" value="" />
 
-					<label>Fleet Comp</label>
-					<select name="fleet_comp">
-						<option value="TBA" selected>TBA</option>
-						<option value="Kitchen Sink (Armor)">Kitchen Sink (Armor)</option>
-						<option value="Kitchen Sink (Shield)">Kitchen Sink (Shield)</option>
-						<option value="Siege Fleet">Siege</option>
-						<option value="Caracal Fleet">Caracal</option>
-						<option value="Baltec Fleet">Baltec</option>
-						<option value="Alph Fleeta">Alpha</option>
-						<option value="TFI Fleet">TFI</option>
-						<option value="Dread Fleet">Dread</option>
-						<option value="Das Boot Fleet">Das Boot</option>
-						<option value="POS Rep Fleet">POS Rep Carriers</option>
-						<option value="Supers Fleet">Supers</option>
-					</select>
+				<label>Fleet Comp</label>
+				<select name="fleet_comp">
+					<option value="TBA" selected>TBA</option>
+					<option value="Kitchen Sink (Armor)">Kitchen Sink (Armor)</option>
+					<option value="Kitchen Sink (Shield)">Kitchen Sink (Shield)</option>
+					<option value="Siege Fleet">Siege</option>
+					<option value="Caracal Fleet">Caracal</option>
+					<option value="Baltec Fleet">Baltec</option>
+					<option value="Alph Fleeta">Alpha</option>
+					<option value="TFI Fleet">TFI</option>
+					<option value="Dread Fleet">Dread</option>
+					<option value="Das Boot Fleet">Das Boot</option>
+					<option value="POS Rep Fleet">POS Rep Carriers</option>
+					<option value="Supers Fleet">Supers</option>
+				</select>
 
-					<?php //TODO MAke this a DBO.TB data pull ?>
-					<label>Comms (Mumble)</label>
-					<select name="comms_channel">
-						<option value="0" selected disabled>TBA</option>
-						<option value="0" disabled>Strat Op</option>
-						<option value="1">Op 1</option>
-						<option value="2">Op 2</option>
-						<option value="3">Op 3</option>
-						<option value="4">Op 4</option>
-						<option value="5">Op 5</option>
-						<option value="6">Op 6</option>
-						<option value="7">Op 7</option>
-						<option value="8">Op 8</option>
-						<option value="9">Op 9</option>
-						<option value="10">Op 10</option>
-						<option disabled>Skirmish</option>
-						<option value="11">Op 11</option>
-						<option value="12">Op 12</option>
-						<option value="13">Op 13</option>
-						<option value="14">Op 14</option>
-					</select>
+				<?php //TODO MAke this a DBO.TB data pull ?>
+				<label>Comms (Mumble)</label>
+				<select name="comms_channel">
+					<option value="0" selected disabled>TBA</option>
+					<option value="0" disabled>Strat Op</option>
+					<option value="1">Op 1</option>
+					<option value="2">Op 2</option>
+					<option value="3">Op 3</option>
+					<option value="4">Op 4</option>
+					<option value="5">Op 5</option>
+					<option value="6">Op 6</option>
+					<option value="7">Op 7</option>
+					<option value="8">Op 8</option>
+					<option value="9">Op 9</option>
+					<option value="10">Op 10</option>
+					<option disabled>Skirmish</option>
+					<option value="11">Op 11</option>
+					<option value="12">Op 12</option>
+					<option value="13">Op 13</option>
+					<option value="14">Op 14</option>
+				</select>
 
-					<?php //TODO MAke this a DBO.TB data pull ?>
-					<label>Reimbursable</label>
-					<select name="reimb_rate">
-						<option value="NA" selected>NA</option>
-						<option value="gsf_peacetime">GSF Peacetime</option>
-						<option value="gsf_stratop">GSF Strat Op</option>
-						<option value="fcon_roam">FCON Roam</option>
-						<option value="fcon_stratop">FCON StratOp</option>
-						<option value="Other">Other</option>
-					</select>
+				<?php //TODO MAke this a DBO.TB data pull ?>
+				<label>Reimbursable</label>
+				<select name="reimb_rate">
+					<option value="NA" selected>NA</option>
+					<option value="gsf_peacetime">GSF Peacetime</option>
+					<option value="gsf_stratop">GSF Strat Op</option>
+					<option value="fcon_roam">FCON Roam</option>
+					<option value="fcon_stratop">FCON StratOp</option>
+					<option value="Other">Other</option>
+				</select>
 			</div>
 
 			<div class="form_part_2">
@@ -102,11 +102,10 @@
 				<input type="input" name="depart_time" value=""/>
 
 				<div class="maker_div">
-					<button type="button" id="create_output">Make!</button>
+					<button type="submit" id="create_output">Make!</button>
 					<button type="reset" id="clear_bttn">Clear</button>
 				</div>
 			</div>
-
 
 			<div class="form_part_3">
 				<h3 class="important">Results:</h3>
@@ -119,6 +118,8 @@
 				<label>Fleet MotD</label>
 				<textarea rows="4" cols="50" class="fleet_motd_output"></textarea>
 			</div>
+
+			</fieldset>
 		</form>
 		<div class="clear"></div>
 
@@ -141,6 +142,9 @@
         
         <!--// Custom scripts -->
         <script type="text/javascript">//<![CDATA[
+
+
+
         	//Always select the text when clicking on a textbox
 			$("textarea").mouseup(function(e){
 				e.preventDefault();
