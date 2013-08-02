@@ -124,7 +124,9 @@ button {
 
 #msg_bar {
 	width: 100%;
-	background-color: #999;
+	font-size: 24pt;
+	margin: 0 auto;
+	padding: 0px 5%;
 }
 
 .maker_div {
