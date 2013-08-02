@@ -106,6 +106,16 @@ button {
 }
 
 
+
+/* jQuery Validation Styles */
+.error {
+	font-size: 14pt;
+	font-weight: bolder;
+	color: red;
+}
+
+
+
 /* BCastM styles */
 .form_part_1, .form_part_2, .form_part_3 {
 	display: inline;
