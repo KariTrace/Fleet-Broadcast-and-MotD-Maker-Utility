@@ -151,6 +151,10 @@
 				$(this).focus().select();
 			});
 
+			$("form").submit(function(e){
+    			return false;
+			});
+
 
 
 	        $("form#bcastm").on('click', '#create_output', function(){
