@@ -154,8 +154,8 @@
 
 
 	        	var bcast_string = "";
-	        	var form_data = $(this).parent().parent().parent().serialize();
-	        	// Collect all the form field values into an arry
+	        	var motd_string = "";
+				var form_data = $(this).parent().parent().parent().serialize();
 	        	
 
 
@@ -177,19 +177,12 @@
 					value[0] = value[0][0].toUpperCase() + value[0].substring(1);
 
 	        		bcast_string += value[0]+": "+value[1] +" || ";
+	        		motd_string  += value[0].toUpperCase()+": "+ value[1]+"\n";
 				});
 
 				bcast_string = bcast_string.substr(0,bcast_string.length-4);
 
-				$("html.js body form#bcastm div.form_part_3 textarea.your_braodcast_output").val(bcast_string).focus().select();
 
-				console.log(bcast_string);
-				return true;
-	        });
-		//]]></script>
-	</body>
-</html>
-<!--//
 
 MUMBLE OP 2 <-- Mumble channel. Make sure it's right.
 
