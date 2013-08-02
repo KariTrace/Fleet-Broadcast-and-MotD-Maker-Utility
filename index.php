@@ -215,6 +215,13 @@
 
 				return true;
 	        });
+
+			$("form#bcastm").on('click', '#clear_bttn', function(){
+				//Clear all validation elements.
+				$(".error").val("").css("display","none");
+
+				return true;
+			});
 		//]]></script>
 	</body>
 </html>
