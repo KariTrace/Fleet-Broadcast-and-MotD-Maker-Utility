@@ -156,20 +156,24 @@
 			});
 
 
+	        $("form#bcastm").on('click', '#create_output', function(e){
 
-	        $("form#bcastm").on('click', '#create_output', function(){
 	        	console.log("BCast maker button presses.");
 	        	// TODO error checking. Add jquery validation plugin here
 
                 //jQ selector logic
-                $("#bcastm").validate({
+                var form_valid = $("#bcastm").validate({
                     rules: {
                         fleet_name: {required: true, rangelength: [3, 128]},
-                        fc_name: 	{rangelength: [2, 32]},
-                        form_up: 	{required: true, email: true}
+                        fc_name: 	{required: true, rangelength: [3, 128]},
+                        form_up: 	{required: true, rangelength: [3, 128]}
                     }
                 });
 
+                //If the form is not valid. Do not create the textbox data(s)
+                if (!$("#bcastm").valid()) {
+                	return false;
+                }
 
 	        	var bcast_string = "";
 	        	var motd_string = "";
@@ -222,7 +226,7 @@
 
 			$("form#bcastm").on('click', '#clear_bttn', function(){
 				//Clear all validation elements.
-				$(".error").val("").css("display","none");
+				$("label.error").val("").css("display","none");
 
 				return true;
 			});
