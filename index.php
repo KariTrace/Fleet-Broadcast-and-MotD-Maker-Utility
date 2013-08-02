@@ -184,22 +184,23 @@
 
 
 
-MUMBLE OP 2 <-- Mumble channel. Make sure it's right.
+				//Populate the broadcast textbox
+				$("textarea.your_braodcast_output").val(bcast_string);
 
-BALTECFLEET <-- Doctrine name.
+				//Populate the 'People to ping' textbox
+				$("textarea.ping_people_output").val("thisperson: thatperson: thirdperson");
+
+				//Populate fleet MotD textbox
+				$("textarea.fleet_motd_output").val(motd_string);
+
+				$("textarea.your_braodcast_output").focus().select()
+
+				$("#msg_bar").text("Ping / MotD created!");
 
 
-BOOSTING LOKIS: If you are not in a Wing Command spot, spam "WC WC WC WC" in fleet until you get moved.
 
-FORMUP 4-EP 12-1 (pw 420) <-- This is the formup location. 
-GET UNDOCKED GET TO THE POS < -- You can change this to STAY DOCKED if you want.
-
-LOGI CHANNEL: BIGAUGSWARM <-- The logi channel of the fleet. FREEDOMLOGI, EG.LOGI and LITTLEAUGSWARM also exist.
-DPS ANCHOR: SANREIKO MEI <-- Main DPS anchor for the fleet, if an anchor is a thing.
-BACKUP ANCHORS: SCHADENFREUD <-- Backup anchors are FUCKING IMPORTANT put your backup FC here.
-
-CFC FLEET PAP LINK: https://adashboard.i...ation/fuckGoons <-- Paste the paplink here so people don't ask for it.
-
-DEPARTING AT 19:50 <-- Other random shit can go here too.
-
--->
+				return true;
+	        });
+		//]]></script>
+	</body>
+</html>
