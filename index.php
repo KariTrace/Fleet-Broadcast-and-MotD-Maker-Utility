@@ -42,7 +42,7 @@
 					<option value="Siege Fleet">Siege</option>
 					<option value="Caracal Fleet">Caracal</option>
 					<option value="Baltec Fleet">Baltec</option>
-					<option value="Alph Fleeta">Alpha</option>
+					<option value="Alpha Fleet">Alpha</option>
 					<option value="TFI Fleet">TFI</option>
 					<option value="Dread Fleet">Dread</option>
 					<option value="Das Boot Fleet">Das Boot</option>
@@ -152,6 +152,7 @@
 			});
 
 			$("form").submit(function(e){
+				
     			return false;
 			});
 
