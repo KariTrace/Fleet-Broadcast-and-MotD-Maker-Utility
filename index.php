@@ -152,7 +152,7 @@
 			});
 
 			$("form").submit(function(e){
-				
+
     			return false;
 			});
 
@@ -173,13 +173,14 @@
 
                 //If the form is not valid. Do not create the textbox data(s)
                 if (!$("#bcastm").valid()) {
+
                 	return false;
                 }
 
 	        	var bcast_string = "";
 	        	var motd_string = "";
 				var form_data = $(this).parent().parent().parent().serialize();
-	        	
+
 
 
 	        	// Split string by & character
@@ -191,16 +192,19 @@
 	        		// Iterate over that array creating the broadcast string
 	        		value = value.split("=");
 
-	        		// Convert field kery and value to human readable 
-	        		value[0] = value[0].replace("_", " ");
-	        		value[1] = value[1].replace("_", " ");
-	        		value[1] = value[1].replace("+", " "); // damn you jQuery, not using %20 for spaces
+					if (value[1]) {
 
-	        		// Uppercase first letter for keys only. Values are up to the user to do.
-					value[0] = value[0][0].toUpperCase() + value[0].substring(1);
+		        		// Convert field key and value to human readable 
+		        		value[0] = value[0].replace("_", " ");
+		        		value[1] = value[1].replace("_", " ");
+		        		value[1] = value[1].replace("+", " "); // damn you jQuery, not using %20 for spaces
 
-	        		bcast_string += value[0]+": "+value[1] +" || ";
-	        		motd_string  += value[0].toUpperCase()+": "+ value[1]+"\n";
+		        		// Uppercase first letter for keys only. Values are up to the user to do.
+						value[0] = value[0][0].toUpperCase() + value[0].substring(1);
+
+		        		bcast_string += value[0]+": "+value[1] +" || ";
+		        		motd_string  += value[0].toUpperCase()+": "+ value[1]+"\n";
+		        	}
 				});
 
 				bcast_string = bcast_string.substr(0,bcast_string.length-4);
