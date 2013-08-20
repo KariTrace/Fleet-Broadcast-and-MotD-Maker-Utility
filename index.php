@@ -208,13 +208,13 @@
 
 
 				//Populate the broadcast textbox
-				$("textarea.your_braodcast_output").val(bcast_string);
+				$("textarea.your_braodcast_output").val(decodeURIComponent(bcast_string));
 
 				//Populate the 'People to ping' textbox
 				$("textarea.ping_people_output").val("thisperson: thatperson: thirdperson");
 
 				//Populate fleet MotD textbox
-				$("textarea.fleet_motd_output").val(motd_string);
+				$("textarea.fleet_motd_output").val(decodeURIComponent(motd_string));
 
 				$("textarea.your_braodcast_output").focus().select()
 
